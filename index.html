@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <script src="js/zoom.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-camera>
+            <a-cursor raycaster="objects: .clickable"></a-cursor>
+        </a-camera>
+
+        <a-box class="clickable" id="my-little-box" color="tomato" depth="2" height="4" width="0.5" position="3 0 -5"></a-box>
+    </a-scene>
+</body>
+
+</html>
